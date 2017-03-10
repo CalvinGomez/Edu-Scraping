@@ -1,5 +1,5 @@
 import json
-import urllib.request`
+import urllib.request
 
 def getVTT(url):
 	vtt_response = urllib.request.urlopen(urllib.request.Request(url)).read()
@@ -16,4 +16,4 @@ def getTranscript(response):
 			transcript = transcript + vtt_lines[2+j] + " "
 	return transcript
 
-print(getVTT('https://www.coursera.org/api/subtitleAssetProxy.v1/OajtTUNVSJqo7U1DVcia_w?expiry=1487376000000&hmac=td2gpjX_kGkbscujImStOqiF-umhDEQwwCBgR7RB8LQ&fileExtension=srt'))
+print(getVTT('https://www.coursera.org/api/subtitleAssetProxy.v1/qOhuT5u6Sv2obk-bugr9Gw?expiry=1488585600000&hmac=VgyJusXrRX5pd-Kx1TRcliu5UokRTF0rQegScKnMfcY&fileExtension=srt'))
